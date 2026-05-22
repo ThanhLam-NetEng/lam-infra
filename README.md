@@ -1,6 +1,6 @@
 # Phạm Thanh Lâm Portfolio
 
-Personal portfolio website for a Network & Security Engineer, focused on HA firewall, SIEM, SD-WAN, cloud security, VPN/DNS security, and infrastructure automation projects.
+Personal portfolio website for a Network & Security Engineer, focused on HA firewall, SIEM, SD-WAN, cloud security, VPN/DNS security, and infrastructure automation projects such as JD Daily Bot.
 
 ## Overview
 
@@ -12,6 +12,7 @@ This is a static, responsive portfolio built with HTML, CSS, and vanilla JavaScr
 - English/Vietnamese language switcher
 - Language-specific CV downloads: `cv-en.pdf` and `cv-vi.pdf`
 - Featured network/security project summaries with GitHub links
+- Additional automation project cards, including JD Daily Bot for AI-assisted job matching and Telegram delivery
 - Certification badges and contact form integration
 - No build step required
 
