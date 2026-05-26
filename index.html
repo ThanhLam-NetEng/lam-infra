@@ -1267,7 +1267,8 @@
                 <span class="chip metric">2.8s failover</span
                 ><span class="chip metric">0.71% sync overhead</span
                 ><span class="chip metric">12,796 WAF alerts</span
-                ><span class="chip metric">RF AUC 1.000</span>
+                ><span class="chip metric">RF AUC 1.000</span
+                ><span class="chip metric">LR AUC 0.981</span>
               </div>
               <div class="chips">
                 <span class="chip">OPNsense</span
@@ -1341,7 +1342,7 @@
               </div>
               <div class="chips">
                 <span class="chip">FastAPI</span
-                ><span class="chip">AWS EC2</span
+                ><span class="chip">AWS</span
                 ><span class="chip">Docker</span
                 ><span class="chip">Presidio</span
                 ><span class="chip">DynamoDB</span>
@@ -1379,7 +1380,7 @@
                 <span class="chip">WireGuard</span
                 ><span class="chip">AdGuard Home</span
                 ><span class="chip">Unbound</span
-                ><span class="chip">AWS EC2</span
+                ><span class="chip">AWS</span
                 ><span class="chip">Ubuntu</span>
               </div>
               <div class="card-links">
@@ -1542,11 +1543,48 @@
                 ></a>
               </div>
             </article>
+
+            <article class="work-card reveal">
+              <div class="work-meta">
+                <span class="badge personal">Personal</span
+                ><span class="period">2026</span>
+              </div>
+              <h3 class="work-title">
+                DiemChuan.info — University Admission Scores Lookup
+              </h3>
+              <p class="work-desc">
+                Vietnamese university admission scores lookup website covering
+                <strong>294 admission codes</strong> and
+                <strong>154,000+ records</strong> across majors, subject
+                combinations, years, methods, and score thresholds. Supports
+                search by school, major, score range, GPA, and admission method.
+                SEO-optimized with canonical URLs, sitemap, Open Graph metadata,
+                and JSON-LD schemas (WebSite, Dataset, FAQ, Breadcrumb).
+                Deployed as a static SPA on Netlify with SPA fallback and cache
+                headers.
+              </p>
+              <div class="chips">
+                <span class="chip">React</span
+                ><span class="chip">Vite</span
+                ><span class="chip">Tailwind CSS</span
+                ><span class="chip">React Router</span
+                ><span class="chip">Netlify</span
+                ><span class="chip">JSON-LD</span
+                ><span class="chip">SEO</span>
+              </div>
+              <div class="card-links">
+                <a
+                  class="card-link"
+                  href="https://diemchuan-vn.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live site <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
           </div>
         </div>
       </section>
-
-      <section id="experience">
         <div class="container">
           <div class="section-head reveal">
             <div>
@@ -1566,7 +1604,7 @@
                 <h3 class="company">FSI — Công ty Cổ phần Công nghệ FSI</h3>
                 <div class="role">Network &amp; Security Engineer Intern</div>
               </div>
-              <span class="badge cert">Mar 2026 – Jun 2026</span>
+              <span class="badge">Mar 2026 – Jun 2026</span>
             </div>
             <div class="address">
               <i class="fa-solid fa-location-dot"></i> 26/22 Đường số 03, Cư Xá
@@ -1647,7 +1685,7 @@
               <div class="focus-icon"><i class="fa-solid fa-code"></i></div>
               <h3 class="focus-title">Automation &amp; Tools</h3>
               <p class="focus-copy">
-                Python, FastAPI, Shell, Git, Wireshark, Mininet, Matplotlib,
+                Python, C++, FastAPI, Shell, Git, Wireshark, Mininet, Matplotlib,
                 scikit-learn.
               </p>
             </div>
@@ -2113,7 +2151,7 @@
         setText("#more-work .section-label", t.moreLabel);
         setText("#more-work .section-title", t.moreTitle);
         setText("#more-work .section-desc", t.moreDesc);
-        document.querySelectorAll("#more-work .card-link").forEach((link) => { if (!link.textContent.includes("Watch") && !link.textContent.includes("demo")) link.innerHTML = t.github; });
+        document.querySelectorAll("#more-work .card-link").forEach((link) => { if (!link.textContent.includes("Watch") && !link.textContent.includes("demo") && !link.href.includes("netlify.app")) link.innerHTML = t.github; });
         setText("#experience .section-label", t.expLabel);
         setText("#experience .section-title", t.expTitle);
         setText("#experience .section-desc", t.expDesc);
