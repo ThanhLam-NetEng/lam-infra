@@ -20,12 +20,20 @@ This is a static, responsive portfolio built with HTML, CSS, and vanilla JavaScr
 
 ```text
 .
-|-- index.html
-|-- cv-en.pdf
-|-- cv-vi.pdf
-|-- favicon.svg
-|-- og-image.png
-`-- *.png certification badges
+├── index.html
+├── cv-en.pdf
+├── cv-vi.pdf
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── translations.js
+│   │   └── app.js
+│   └── images/
+│       ├── favicon.svg
+│       ├── og-image.png
+│       └── *.png certification badges
+└── README.md
 ```
 
 ## Run Locally

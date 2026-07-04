@@ -16,9 +16,11 @@
       property="og:description"
       content="Portfolio of a UIT network graduate building HA firewall, SIEM, SD-WAN, and cloud security labs with measurable results."
     />
+    <meta property="og:image" content="assets/images/og-image.png" />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#08111f" />
+    <meta name="theme-color" content="#030712" />
     <title>Phạm Thanh Lâm — Network & Security Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,996 +31,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <style>
-      :root {
-        --bg: #07101d;
-        --bg-soft: #0b1526;
-        --surface: #101d31;
-        --surface-2: #132238;
-        --surface-3: #172940;
-        --accent: #2dd4bf;
-        --accent-2: #f59e0b;
-        --accent-3: #a78bfa;
-        --text: #eef5ff;
-        --muted: #94a3b8;
-        --muted-2: #64748b;
-        --border: rgba(148, 163, 184, 0.16);
-        --border-strong: rgba(45, 212, 191, 0.34);
-        --shadow: 0 20px 70px rgba(0, 0, 0, 0.24);
-        --font:
-          "Sora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-        --mono:
-          "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-        --container: 1120px;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-        scroll-padding-top: 86px;
-      }
-      body {
-        min-height: 100vh;
-        font-family: var(--font);
-        color: var(--text);
-        background:
-          radial-gradient(
-            circle at 18% 0%,
-            rgba(45, 212, 191, 0.08),
-            transparent 34rem
-          ),
-          radial-gradient(
-            circle at 86% 8%,
-            rgba(167, 139, 250, 0.07),
-            transparent 28rem
-          ),
-          var(--bg);
-        line-height: 1.7;
-        overflow-x: hidden;
-      }
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        z-index: -1;
-        background-image:
-          linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
-        background-size: 44px 44px;
-        mask-image: linear-gradient(to bottom, black 0%, transparent 72%);
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      a:focus-visible,
-      button:focus-visible,
-      input:focus-visible,
-      textarea:focus-visible {
-        outline: 2px solid var(--accent);
-        outline-offset: 4px;
-      }
-      ::selection {
-        background: rgba(45, 212, 191, 0.28);
-        color: #fff;
-      }
-      .container {
-        width: min(100% - 2rem, var(--container));
-        margin-inline: auto;
-      }
-
-      /* Navigation */
-      .site-nav {
-        position: fixed;
-        inset: 0 0 auto 0;
-        z-index: 100;
-        height: 68px;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid transparent;
-        transition:
-          background 0.25s ease,
-          border-color 0.25s ease,
-          backdrop-filter 0.25s ease;
-      }
-      .site-nav.scrolled {
-        background: rgba(7, 16, 29, 0.86);
-        border-color: var(--border);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-      }
-      .nav-inner {
-        width: min(100% - 2rem, 1220px);
-        margin-inline: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-      }
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-        font-family: var(--mono);
-        font-size: 0.88rem;
-        font-weight: 600;
-        letter-spacing: -0.02em;
-      }
-      .brand-mark {
-        display: grid;
-        place-items: center;
-        width: 34px;
-        height: 34px;
-        border: 1px solid var(--border-strong);
-        border-radius: 10px;
-        color: var(--accent);
-        background: rgba(45, 212, 191, 0.07);
-      }
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 1.1rem;
-        list-style: none;
-      }
-      .nav-links a {
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        color: var(--muted);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        transition: color 0.2s ease;
-      }
-      .nav-links a:hover {
-        color: var(--text);
-      }
-      .nav-actions {
-        display: flex;
-        align-items: center;
-        gap: 0.7rem;
-      }
-      .lang-switch {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.18rem;
-        padding: 0.25rem;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: rgba(16, 29, 49, 0.62);
-      }
-      .lang-btn {
-        min-height: 32px;
-        padding: 0.35rem 0.58rem;
-        border: 0;
-        border-radius: 999px;
-        color: var(--muted);
-        background: transparent;
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        font-weight: 600;
-        cursor: pointer;
-      }
-      .lang-btn.active {
-        color: #06131d;
-        background: var(--accent);
-      }
-      .mobile-lang-switch {
-        display: flex;
-        gap: 0.45rem;
-        padding: 0.35rem 0.35rem 0.7rem;
-        border-bottom: 1px solid var(--border);
-        margin-bottom: 0.35rem;
-      }
-      .mobile-lang-switch .lang-btn {
-        flex: 1;
-        border: 1px solid var(--border);
-        background: rgba(16, 29, 49, 0.72);
-      }
-      .mobile-lang-switch .lang-btn.active {
-        background: var(--accent);
-        color: #06131d;
-      }
-      .btn,
-      .nav-cv {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.45rem;
-        min-height: 42px;
-        padding: 0.7rem 1rem;
-        border-radius: 999px;
-        border: 1px solid var(--border);
-        font-family: var(--mono);
-        font-size: 0.76rem;
-        font-weight: 500;
-        color: var(--text);
-        background: rgba(16, 29, 49, 0.62);
-        transition:
-          transform 0.2s ease,
-          border-color 0.2s ease,
-          background 0.2s ease,
-          color 0.2s ease;
-      }
-      .btn:hover,
-      .nav-cv:hover {
-        transform: translateY(-2px);
-        border-color: var(--border-strong);
-        color: var(--accent);
-      }
-      .btn-primary {
-        color: #06131d;
-        background: var(--accent);
-        border-color: var(--accent);
-        font-weight: 600;
-      }
-      .btn-primary:hover {
-        color: #06131d;
-        box-shadow: 0 12px 34px rgba(45, 212, 191, 0.18);
-      }
-      .nav-toggle {
-        display: none;
-        width: 42px;
-        height: 42px;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        background: rgba(16, 29, 49, 0.72);
-        color: var(--text);
-        cursor: pointer;
-      }
-      .mobile-menu {
-        display: none;
-        position: fixed;
-        top: 68px;
-        left: 1rem;
-        right: 1rem;
-        z-index: 99;
-        padding: 1rem;
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        background: rgba(7, 16, 29, 0.96);
-        backdrop-filter: blur(16px);
-        box-shadow: var(--shadow);
-      }
-      .mobile-menu.open {
-        display: grid;
-        gap: 0.35rem;
-      }
-      .mobile-menu a {
-        padding: 0.8rem 0.9rem;
-        border-radius: 12px;
-        color: var(--muted);
-        font-family: var(--mono);
-        font-size: 0.82rem;
-      }
-      .mobile-menu a:hover {
-        color: var(--text);
-        background: rgba(148, 163, 184, 0.08);
-      }
-
-      /* Hero */
-      .hero {
-        position: relative;
-        min-height: 100svh;
-        display: grid;
-        align-items: center;
-        padding: 8rem 0 5rem;
-      }
-      .hero-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.82fr);
-        align-items: center;
-        gap: 4rem;
-      }
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.55rem;
-        width: fit-content;
-        padding: 0.38rem 0.8rem;
-        border: 1px solid var(--border-strong);
-        border-radius: 999px;
-        color: var(--accent);
-        background: rgba(45, 212, 191, 0.07);
-        font-family: var(--mono);
-        font-size: 0.76rem;
-        margin-bottom: 1.3rem;
-      }
-      .eyebrow i {
-        font-size: 0.58rem;
-      }
-      .hero h1 {
-        max-width: 780px;
-        font-size: clamp(2.55rem, 6vw, 5.25rem);
-        line-height: 1.02;
-        letter-spacing: -0.06em;
-        margin-bottom: 1.2rem;
-      }
-      .hero h1 span {
-        color: var(--accent);
-      }
-      .hero-lead {
-        max-width: 690px;
-        color: var(--muted);
-        font-size: clamp(1rem, 2vw, 1.16rem);
-        line-height: 1.85;
-        margin-bottom: 1.7rem;
-      }
-      .hero-lead strong {
-        color: var(--text);
-        font-weight: 600;
-      }
-      .hero-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-        margin-bottom: 1.65rem;
-      }
-      .hero-trust {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.55rem;
-        list-style: none;
-      }
-      .trust-pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.42rem 0.75rem;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        color: var(--muted);
-        background: rgba(16, 29, 49, 0.42);
-        font-family: var(--mono);
-        font-size: 0.72rem;
-      }
-      .trust-pill i {
-        color: var(--accent);
-      }
-      .terminal-card {
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        background: linear-gradient(
-          180deg,
-          rgba(16, 29, 49, 0.92),
-          rgba(11, 21, 38, 0.92)
-        );
-        box-shadow: var(--shadow);
-        overflow: hidden;
-      }
-      .terminal-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.9rem 1rem;
-        border-bottom: 1px solid var(--border);
-        background: rgba(7, 16, 29, 0.56);
-      }
-      .dots {
-        display: flex;
-        gap: 0.42rem;
-      }
-      .dots span {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--muted-2);
-        opacity: 0.52;
-      }
-      .terminal-label {
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        color: var(--muted-2);
-      }
-      .terminal-body {
-        padding: 1.25rem;
-      }
-      .console-line {
-        font-family: var(--mono);
-        font-size: 0.8rem;
-        color: var(--muted);
-        margin-bottom: 0.6rem;
-      }
-      .console-line .prompt {
-        color: var(--accent);
-      }
-      .console-grid {
-        display: grid;
-        gap: 0.75rem;
-        margin-top: 1rem;
-      }
-      .console-metric {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 0.8rem;
-        align-items: start;
-        padding: 0.95rem;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        background: rgba(19, 34, 56, 0.68);
-      }
-      .metric-value {
-        min-width: 72px;
-        color: var(--accent);
-        font-family: var(--mono);
-        font-size: 1.15rem;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-      }
-      .metric-copy b {
-        display: block;
-        color: var(--text);
-        font-size: 0.86rem;
-        margin-bottom: 0.1rem;
-      }
-      .metric-copy span {
-        color: var(--muted);
-        font-size: 0.78rem;
-        line-height: 1.55;
-      }
-
-      /* Shared sections */
-      section {
-        padding: 5.6rem 0;
-      }
-      .section-head {
-        display: grid;
-        grid-template-columns: minmax(0, 0.8fr) minmax(260px, 0.52fr);
-        gap: 2rem;
-        align-items: end;
-        margin-bottom: 2.2rem;
-      }
-      .section-label {
-        font-family: var(--mono);
-        color: var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 0.16em;
-        font-size: 0.74rem;
-        font-weight: 600;
-        margin-bottom: 0.6rem;
-      }
-      .section-title {
-        font-size: clamp(1.85rem, 3.8vw, 2.8rem);
-        line-height: 1.12;
-        letter-spacing: -0.045em;
-      }
-      .section-desc {
-        color: var(--muted);
-        font-size: 0.95rem;
-        line-height: 1.85;
-      }
-      .section-soft {
-        background: rgba(11, 21, 38, 0.72);
-        border-block: 1px solid var(--border);
-      }
-
-      /* Proof strip */
-      .proof-strip {
-        margin-top: -2rem;
-        position: relative;
-        z-index: 2;
-      }
-      .proof-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        overflow: hidden;
-        background: rgba(16, 29, 49, 0.82);
-        box-shadow: var(--shadow);
-      }
-      .proof-item {
-        padding: 1.25rem;
-        border-right: 1px solid var(--border);
-      }
-      .proof-item:last-child {
-        border-right: 0;
-      }
-      .proof-value {
-        font-family: var(--mono);
-        color: var(--accent);
-        font-size: 1.34rem;
-        font-weight: 600;
-        letter-spacing: -0.04em;
-      }
-      .proof-label {
-        color: var(--muted);
-        font-size: 0.78rem;
-        margin-top: 0.2rem;
-        line-height: 1.5;
-      }
-
-      /* Work cards */
-      .work-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1.1rem;
-      }
-      .work-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        padding: 1.35rem;
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        background: linear-gradient(
-          180deg,
-          rgba(16, 29, 49, 0.94),
-          rgba(13, 24, 42, 0.94)
-        );
-        overflow: hidden;
-        transition:
-          transform 0.22s ease,
-          border-color 0.22s ease,
-          background 0.22s ease;
-      }
-      .work-card::before {
-        content: "";
-        position: absolute;
-        inset: 0 0 auto 0;
-        height: 3px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          var(--accent),
-          transparent
-        );
-        opacity: 0;
-        transition: opacity 0.22s ease;
-      }
-      .work-card:hover {
-        transform: translateY(-4px);
-        border-color: var(--border-strong);
-      }
-      .work-card:hover::before {
-        opacity: 1;
-      }
-      .work-meta {
-        display: flex;
-        justify-content: space-between;
-        gap: 0.75rem;
-        align-items: flex-start;
-        margin-bottom: 0.95rem;
-      }
-      .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.42rem;
-        width: fit-content;
-        padding: 0.28rem 0.65rem;
-        border: 1px solid var(--border-strong);
-        border-radius: 999px;
-        background: rgba(45, 212, 191, 0.07);
-        color: var(--accent);
-        font-family: var(--mono);
-        font-size: 0.66rem;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-      }
-      .badge.personal {
-        color: #34d399;
-        border-color: rgba(52, 211, 153, 0.3);
-        background: rgba(52, 211, 153, 0.07);
-      }
-      .badge.academic {
-        color: var(--accent-3);
-        border-color: rgba(167, 139, 250, 0.32);
-        background: rgba(167, 139, 250, 0.07);
-      }
-      .badge.cert {
-        color: var(--accent-2);
-        border-color: rgba(245, 158, 11, 0.32);
-        background: rgba(245, 158, 11, 0.07);
-      }
-      .period {
-        color: var(--muted-2);
-        font-family: var(--mono);
-        font-size: 0.72rem;
-        white-space: nowrap;
-      }
-      .work-title {
-        font-size: 1.1rem;
-        line-height: 1.35;
-        margin-bottom: 0.55rem;
-        letter-spacing: -0.02em;
-      }
-      .work-desc {
-        color: var(--muted);
-        font-size: 0.9rem;
-        line-height: 1.72;
-        margin-bottom: 1rem;
-      }
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        margin-bottom: 1rem;
-      }
-      .chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.35rem;
-        padding: 0.28rem 0.56rem;
-        border-radius: 999px;
-        background: rgba(148, 163, 184, 0.08);
-        border: 1px solid rgba(148, 163, 184, 0.12);
-        color: var(--muted);
-        font-family: var(--mono);
-        font-size: 0.68rem;
-      }
-      .chip.metric {
-        color: var(--text);
-        border-color: rgba(45, 212, 191, 0.2);
-        background: rgba(45, 212, 191, 0.06);
-      }
-      .card-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: auto;
-        padding-top: 0.3rem;
-      }
-      .card-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        color: var(--accent);
-        font-family: var(--mono);
-        font-size: 0.74rem;
-        transition:
-          color 0.2s ease,
-          transform 0.2s ease;
-      }
-      .card-link:hover {
-        color: var(--text);
-        transform: translateX(2px);
-      }
-      .muted-link {
-        color: var(--muted);
-      }
-
-      /* Experience */
-      .experience-card {
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        padding: 1.5rem;
-        background: rgba(16, 29, 49, 0.78);
-      }
-      .experience-top {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        align-items: flex-start;
-        margin-bottom: 0.65rem;
-      }
-      .company {
-        font-size: 1.12rem;
-        letter-spacing: -0.02em;
-      }
-      .role {
-        color: var(--accent);
-        font-family: var(--mono);
-        font-size: 0.82rem;
-        margin-top: 0.18rem;
-      }
-      .address {
-        color: var(--muted-2);
-        font-size: 0.82rem;
-        margin-bottom: 1rem;
-      }
-      .bullet-list {
-        list-style: none;
-        display: grid;
-        gap: 0.62rem;
-      }
-      .bullet-list li {
-        position: relative;
-        padding-left: 1.15rem;
-        color: var(--muted);
-        font-size: 0.9rem;
-        line-height: 1.75;
-      }
-      .bullet-list li::before {
-        content: "▹";
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: var(--accent);
-      }
-      .bullet-list strong {
-        color: var(--text);
-        font-weight: 500;
-      }
-
-      /* Focus */
-      .focus-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1rem;
-      }
-      .focus-card {
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        padding: 1.25rem;
-        background: rgba(16, 29, 49, 0.78);
-      }
-      .focus-icon {
-        width: 42px;
-        height: 42px;
-        display: grid;
-        place-items: center;
-        margin-bottom: 1rem;
-        border: 1px solid var(--border-strong);
-        border-radius: 14px;
-        color: var(--accent);
-        background: rgba(45, 212, 191, 0.07);
-      }
-      .focus-title {
-        font-size: 0.98rem;
-        margin-bottom: 0.5rem;
-      }
-      .focus-copy {
-        color: var(--muted);
-        font-size: 0.84rem;
-        line-height: 1.75;
-      }
-
-      /* Certs/About/Contact */
-      .cert-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 1rem;
-      }
-      .cert-card {
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 1.1rem;
-        background: rgba(16, 29, 49, 0.78);
-        min-height: 100%;
-      }
-      .cert-card img {
-        width: 56px;
-        height: 56px;
-        object-fit: contain;
-        margin-bottom: 0.9rem;
-      }
-      .cert-card h3 {
-        font-size: 0.95rem;
-        line-height: 1.35;
-        margin-bottom: 0.35rem;
-      }
-      .cert-card p {
-        color: var(--muted);
-        font-size: 0.78rem;
-        line-height: 1.65;
-        margin-bottom: 0.85rem;
-      }
-      .about-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
-        gap: 2.4rem;
-        align-items: start;
-      }
-      .about-copy p {
-        color: var(--muted);
-        font-size: 0.95rem;
-        line-height: 1.9;
-        margin-bottom: 1rem;
-      }
-      .about-copy strong {
-        color: var(--text);
-      }
-      .info-panel {
-        border: 1px solid var(--border);
-        border-radius: 22px;
-        overflow: hidden;
-        background: rgba(16, 29, 49, 0.78);
-      }
-      .info-row {
-        display: grid;
-        grid-template-columns: 28px 84px 1fr;
-        gap: 0.75rem;
-        align-items: center;
-        padding: 0.9rem 1rem;
-        border-bottom: 1px solid var(--border);
-        font-size: 0.84rem;
-      }
-      .info-row:last-child {
-        border-bottom: 0;
-      }
-      .info-row i {
-        color: var(--accent);
-        text-align: center;
-      }
-      .info-label {
-        color: var(--muted-2);
-        font-family: var(--mono);
-        font-size: 0.72rem;
-      }
-      .info-value {
-        color: var(--muted);
-      }
-      .contact-card {
-        max-width: 760px;
-        margin-inline: auto;
-        text-align: center;
-        border: 1px solid var(--border);
-        border-radius: 28px;
-        padding: 2rem;
-        background: linear-gradient(
-          180deg,
-          rgba(16, 29, 49, 0.9),
-          rgba(11, 21, 38, 0.9)
-        );
-        box-shadow: var(--shadow);
-      }
-      .contact-card .section-title {
-        margin-bottom: 0.8rem;
-      }
-      .contact-desc {
-        color: var(--muted);
-        max-width: 580px;
-        margin: 0 auto 1.35rem;
-      }
-      .contact-form {
-        display: grid;
-        gap: 0.8rem;
-        margin-top: 1.3rem;
-        text-align: left;
-      }
-      .contact-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
-      }
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 0.85rem 1rem;
-        color: var(--text);
-        background: rgba(7, 16, 29, 0.72);
-        font-family: var(--font);
-        font-size: 0.9rem;
-      }
-      .contact-form textarea {
-        min-height: 130px;
-        resize: vertical;
-      }
-      .contact-form input::placeholder,
-      .contact-form textarea::placeholder {
-        color: var(--muted-2);
-      }
-      .form-success {
-        display: none;
-        margin-top: 1rem;
-        border: 1px solid var(--border-strong);
-        border-radius: 16px;
-        padding: 1rem;
-        color: var(--accent);
-        background: rgba(45, 212, 191, 0.07);
-        font-family: var(--mono);
-        font-size: 0.82rem;
-      }
-      .direct-links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1rem;
-      }
-
-      footer {
-        padding: 2rem 1rem;
-        border-top: 1px solid var(--border);
-        text-align: center;
-        color: var(--muted-2);
-        font-family: var(--mono);
-        font-size: 0.75rem;
-      }
-      footer span {
-        color: var(--accent);
-      }
-
-      .reveal {
-        opacity: 0;
-        transform: translateY(24px);
-        transition:
-          opacity 0.6s ease,
-          transform 0.6s ease;
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: none;
-      }
-
-      @media (max-width: 980px) {
-        .nav-links,
-        .nav-actions {
-          display: none;
-        }
-        .nav-toggle {
-          display: inline-grid;
-          place-items: center;
-        }
-        .hero-grid,
-        .section-head,
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-        .hero {
-          padding-top: 7.5rem;
-        }
-        .terminal-card {
-          max-width: 560px;
-        }
-        .proof-grid,
-        .focus-grid,
-        .cert-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      @media (max-width: 720px) {
-        section {
-          padding: 4.2rem 0;
-        }
-        .work-grid,
-        .proof-grid,
-        .focus-grid,
-        .cert-grid {
-          grid-template-columns: 1fr;
-        }
-        .proof-item {
-          border-right: 0;
-          border-bottom: 1px solid var(--border);
-        }
-        .proof-item:last-child {
-          border-bottom: 0;
-        }
-        .experience-top {
-          flex-direction: column;
-        }
-        .contact-row {
-          grid-template-columns: 1fr;
-        }
-        .contact-card {
-          padding: 1.25rem;
-        }
-        .info-row {
-          grid-template-columns: 24px 1fr;
-        }
-        .info-label {
-          display: none;
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          scroll-behavior: auto !important;
-          transition-duration: 0.01ms !important;
-        }
-        .reveal {
-          opacity: 1;
-          transform: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <nav class="site-nav" id="nav" aria-label="Primary navigation">
@@ -1582,9 +595,42 @@
                 ></a>
               </div>
             </article>
+
+            <article class="work-card reveal" id="makeFlowCard">
+              <div class="work-meta">
+                <span class="badge personal">Personal</span>
+                <span class="period">Jul 2026</span>
+              </div>
+              <div class="flow-preview">
+                <img src="assets/images/make-automation-flow.png" alt="Make.com AI Document Parser Workflow" />
+              </div>
+              <h3 class="work-title">AI Document Parser — Make.com Automation</h3>
+              <p class="work-desc">
+                Automated document processing workflow built on Make.com. It monitors a Google Drive folder for new files, downloads them, invokes the Anthropic Claude API to analyze and extract structured data via custom prompts, parses the JSON payload, and records the parsed information into Google Sheets in real-time.
+              </p>
+              <div class="chips">
+                <span class="chip metric">Real-time processing</span>
+                <span class="chip">Make.com</span>
+                <span class="chip">Claude API</span>
+                <span class="chip">Google Drive</span>
+                <span class="chip">JSON Parser</span>
+                <span class="chip">Google Sheets</span>
+              </div>
+              <div class="card-links">
+                <a
+                  class="card-link"
+                  href="assets/images/make-automation-flow.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View workflow diagram <i class="fa-solid fa-arrow-right"></i></a
+                >
+              </div>
+            </article>
           </div>
         </div>
       </section>
+
+      <section id="experience">
         <div class="container">
           <div class="section-head reveal">
             <div>
@@ -1594,47 +640,72 @@
               </h2>
             </div>
             <p class="section-desc">
-              Internship work focused on security appliance validation, Cisco
-              network tasks, SD-WAN evaluation, and on-site support.
+              Internship and current professional work focused on IT support operations, security appliance validation, and networking.
             </p>
           </div>
-          <article class="experience-card reveal">
-            <div class="experience-top">
-              <div>
-                <h3 class="company">FSI — Công ty Cổ phần Công nghệ FSI</h3>
-                <div class="role">Network &amp; Security Engineer Intern</div>
+          <div class="experience-list" id="experienceList">
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3 class="company">Maersk</h3>
+                  <div class="role">IT Support Fresher</div>
+                </div>
+                <span class="badge">Jun 2026 – Present</span>
               </div>
-              <span class="badge">Mar 2026 – Jun 2026</span>
-            </div>
-            <div class="address">
-              <i class="fa-solid fa-location-dot"></i> 26/22 Đường số 03, Cư Xá
-              Đô Thành, Phường Bàn Cờ, TP. Hồ Chí Minh
-            </div>
-            <ul class="bullet-list">
-              <li>
-                Deployed and validated <strong>F-DDH BOX</strong> security
-                appliance end-to-end: lab setup, traffic simulation, alert
-                verification, configuration guide, and customer-facing demos.
-              </li>
-              <li>
-                Researched VPN evasion techniques including
-                <strong
-                  >Tailscale, Cloudflare WARP, and WireGuard on AWS EC2</strong
-                >
-                to assess NGFW visibility limitations.
-              </li>
-              <li>
-                Assisted Cisco network initiatives including
-                <strong>Catalyst 9200L IOS upgrade</strong>, StackWise stacking,
-                Peplink SD-WAN evaluation, and presales documentation.
-              </li>
-              <li>
-                Deployed internal attendance web app on a local server with
-                <strong>NAT port forwarding</strong>, custom domain setup,
-                functional testing, and basic security assessment.
-              </li>
-            </ul>
-          </article>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i> Đông Hòa Ward, Dĩ An City, Bình Dương Province
+              </div>
+              <ul class="bullet-list">
+                <li>
+                  Provide technical support for workplace IT infrastructure, endpoint hardware, and office network connectivity.
+                </li>
+                <li>
+                  Assist in staging, deploying, and troubleshooting IT systems and user devices.
+                </li>
+                <li>
+                  Coordinate local IT assets and network issues with regional support teams.
+                </li>
+              </ul>
+            </article>
+
+            <article class="experience-card reveal">
+              <div class="experience-top">
+                <div>
+                  <h3 class="company">FSI — Công ty Cổ phần Công nghệ FSI</h3>
+                  <div class="role">Network &amp; Security Engineer Intern</div>
+                </div>
+                <span class="badge">Mar 2026 – Jun 2026</span>
+              </div>
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i> 26/22 Đường số 03, Cư Xá
+                Đô Thành, Phường Bàn Cờ, TP. Hồ Chí Minh
+              </div>
+              <ul class="bullet-list">
+                <li>
+                  Deployed and validated <strong>F-DDH BOX</strong> security
+                  appliance end-to-end: lab setup, traffic simulation, alert
+                  verification, configuration guide, and customer-facing demos.
+                </li>
+                <li>
+                  Researched VPN evasion techniques including
+                  <strong
+                    >Tailscale, Cloudflare WARP, and WireGuard on AWS EC2</strong
+                  >
+                  to assess NGFW visibility limitations.
+                </li>
+                <li>
+                  Assisted Cisco network initiatives including
+                  <strong>Catalyst 9200L IOS upgrade</strong>, StackWise stacking,
+                  Peplink SD-WAN evaluation, and presales documentation.
+                </li>
+                <li>
+                  Deployed internal attendance web app on a local server with
+                  <strong>NAT port forwarding</strong>, custom domain setup,
+                  functional testing, and basic security assessment.
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -1708,7 +779,7 @@
           <div class="cert-grid">
             <article class="cert-card reveal">
               <img
-                src="networking-basics.png"
+                src="assets/images/networking-basics.png"
                 alt="Networking Basics badge"
                 onerror="this.style.display = 'none'"
               />
@@ -1727,7 +798,7 @@
             </article>
             <article class="cert-card reveal">
               <img
-                src="networking-devices-and-initial-configuration.png"
+                src="assets/images/networking-devices-and-initial-configuration.png"
                 alt="Networking Devices and Initial Configuration badge"
                 onerror="this.style.display = 'none'"
               />
@@ -1746,7 +817,7 @@
             </article>
             <article class="cert-card reveal">
               <img
-                src="linux-unhatched.png"
+                src="assets/images/linux-unhatched.png"
                 alt="Linux Unhatched badge"
                 onerror="this.style.display = 'none'"
               />
@@ -1765,7 +836,7 @@
             </article>
             <article class="cert-card reveal">
               <img
-                src="linux-essentials.png"
+                src="assets/images/linux-essentials.png"
                 alt="Linux Essentials badge"
                 onerror="this.style.display = 'none'"
               />
@@ -1781,6 +852,24 @@
                 rel="noopener noreferrer"
                 >Credly <i class="fa-solid fa-arrow-right"></i
               ></a>
+            </article>
+            <article class="cert-card reveal">
+              <img
+                src="assets/images/google-it-support-badge.png"
+                alt="Technical Support Fundamentals badge"
+                onerror="this.style.display = 'none'"
+              />
+              <h3>Technical Support Fundamentals</h3>
+              <p>
+                Computer hardware, operating systems, troubleshooting, system administration, and network protocols.
+              </p>
+              <a
+                class="card-link"
+                href="https://coursera.org/verify/LSDP4K60DDFX"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Coursera <i class="fa-solid fa-arrow-right"></i></a
+              >
             </article>
           </div>
         </div>
@@ -1947,304 +1036,7 @@
       <span>network/security engineering</span> · Ho Chi Minh City
     </footer>
 
-    <script>
-      const translations = {
-        en: {
-          title: "Phạm Thanh Lâm — Network & Security Engineer",
-          nav: ["Work", "Experience", "Focus", "Certs", "About", "Contact"],
-          mobile: ["Featured Work", "Experience", "Technical Focus", "Certifications", "About", "Contact", "Download CV →"],
-          cv: "Download CV",
-          cvFile: "cv-en.pdf",
-          downloadPdf: `Download PDF <i class="fa-solid fa-arrow-right"></i>`,
-          eyebrow: "Open to Network/Security roles · 2026",
-          heroTitle: "Network & Security Engineer for practical infrastructure systems.",
-          heroLead: "I design and validate <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong>, and <strong>cloud security</strong> labs with a focus on measurable results, documentation, and operations.",
-          heroCta: `View featured work <i class="fa-solid fa-arrow-right"></i>`,
-          trust: ["UIT Network Graduate", "FSI Network/Security Intern", "HCM City · Bình Dương"],
-          terminal: ["show --validated-results", "HA firewall failover", "OPNsense Active-Passive cluster validated in thesis lab.", "WAF alerts analyzed", "ModSecurity + OWASP CRS validation with payload-level review.", "Network/security labs", "SD-WAN, SIEM, VPN/DNS security, AI security proxy."],
-          proof: ["Firewall architecture, SSL offloading, ModSecurity, SIEM pipeline.", "Cisco dCloud/CML, vManage, C8000v, AAR policy, IPsec.", "AWS/GCP labs, WireGuard, DNS sinkhole, API security.", "Python, FastAPI, Docker, shell scripts, monitoring workflows."],
-          workLabel: "Featured Work",
-          workTitle: "Project summaries with direct links to technical details.",
-          workDesc: "Each project links to GitHub details: diagrams, screenshots, commands, and validation notes.",
-          thesisBadge: "Thesis",
-          thesisPeriod: "Jan – May 2026",
-          thesisTitle: "HA Firewall & AI-driven Security Monitoring",
-          thesisDesc: "Graduation thesis combining OPNsense HA firewall, WAF, Wazuh SIEM, and ML-based security log analysis in a controlled lab.",
-          thesisLink: `View thesis repository <i class="fa-solid fa-arrow-right"></i>`,
-          sdwanBadge: "Academic",
-          sdwanDesc: "3-site Hub-and-Spoke SD-WAN overlay with encrypted dual transport and least-privilege traffic steering for critical medical systems.",
-          github: `View GitHub <i class="fa-solid fa-arrow-right"></i>`,
-          aiBadge: "Personal",
-          aiDesc: "Bilingual LLM security proxy enforcing DLP and prompt-injection controls at the API perimeter for enterprise-style AI workflows.",
-          vpnDesc: "Privacy-first VPN gateway chaining WireGuard, AdGuard Home, and Unbound to reduce telemetry and avoid third-party DNS tracking.",
-          moreLabel: "More Projects",
-          moreTitle: "Additional labs and automation work.",
-          moreDesc: "Kept shorter here so the page scans quickly. Each item links out when public proof is available.",
-          expLabel: "Experience",
-          expTitle: "Practical exposure in network and security operations.",
-          expDesc: "Internship work focused on security appliance validation, Cisco network tasks, SD-WAN evaluation, and on-site support.",
-          expRole: "Network & Security Engineer Intern",
-          focusLabel: "Technical Focus",
-          focusTitle: "Skill groups mapped to the roles I am targeting.",
-          focusDesc: "A cleaner alternative to a long wall of skill pills: focused, readable, and aligned to network/security hiring signals.",
-          certLabel: "Certifications",
-          certTitle: "Verified learning path.",
-          certDesc: "Cisco NetAcad and Linux credentials supporting the networking/security foundation.",
-          aboutLabel: "Background",
-          aboutTitle: "UIT network graduate building security-focused infrastructure labs.",
-          aboutP: ["I majored in <strong>Computer Networks & Data Communications</strong> at the University of Information Technology (UIT – VNU-HCM). My work focuses on network security, system infrastructure, and practical automation.", "I have worked with production-adjacent tasks at FSI, including security appliance validation, Cisco hardware support, SD-WAN evaluation, VPN visibility research, and local service deployment.", "My near-term direction is to grow into Network/Security Engineering, then deepen into network automation and cloud networking."],
-          contactLabel: "Contact",
-          contactTitle: "Let’s connect.",
-          contactDesc: "Open to Network Engineer, Security Engineer, IT Helpdesk with networking/security focus, and infrastructure support opportunities around HCM City / Bình Dương.",
-          emailMe: `<i class="fa-solid fa-envelope"></i> Email me`,
-          form: ["Your name", "Your email", "Your message...", "Send message"],
-          footer: "© 2026 Phạm Thanh Lâm · Built for <span>network/security engineering</span> · Ho Chi Minh City"
-        },
-        vi: {
-          title: "Phạm Thanh Lâm — Network & Security Engineer",
-          nav: ["Dự án", "Kinh nghiệm", "Trọng tâm", "Chứng chỉ", "Giới thiệu", "Liên hệ"],
-          mobile: ["Dự án nổi bật", "Kinh nghiệm", "Trọng tâm kỹ thuật", "Chứng chỉ", "Giới thiệu", "Liên hệ", "Tải CV →"],
-          cv: "Tải CV",
-          cvFile: "cv-vi.pdf",
-          downloadPdf: `Tải PDF <i class="fa-solid fa-arrow-right"></i>`,
-          eyebrow: "Tìm cơ hội Network/Security · 2026",
-          heroTitle: "Network & Security Engineer xây dựng hạ tầng thực tế, có kiểm chứng.",
-          heroLead: "Tôi thiết kế và kiểm chứng các lab <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong> và <strong>cloud security</strong>, tập trung vào kết quả đo được, tài liệu rõ ràng và khả năng vận hành.",
-          heroCta: `Xem dự án nổi bật <i class="fa-solid fa-arrow-right"></i>`,
-          trust: ["Sinh viên Mạng máy tính UIT", "Thực tập Network/Security tại FSI", "TP.HCM · Bình Dương"],
-          terminal: ["show --validated-results", "Failover HA firewall", "Cụm OPNsense Active-Passive được kiểm chứng trong lab khóa luận.", "WAF alerts đã phân tích", "Kiểm chứng ModSecurity + OWASP CRS ở mức payload.", "Lab network/security", "SD-WAN, SIEM, VPN/DNS security, AI security proxy."],
-          proof: ["Kiến trúc firewall, SSL offloading, ModSecurity, SIEM pipeline.", "Cisco dCloud/CML, vManage, C8000v, AAR policy, IPsec.", "AWS/GCP labs, WireGuard, DNS sinkhole, API security.", "Python, FastAPI, Docker, shell scripts, monitoring workflows."],
-          workLabel: "Dự án nổi bật",
-          workTitle: "Tóm tắt dự án, dẫn thẳng tới chi tiết kỹ thuật.",
-          workDesc: "Mỗi dự án có link GitHub chứa diagram, screenshot, command và ghi chú kiểm chứng.",
-          thesisBadge: "Khóa luận",
-          thesisPeriod: "01 – 05/2026",
-          thesisTitle: "HA Firewall & AI-driven Security Monitoring",
-          thesisDesc: "Khóa luận kết hợp OPNsense HA firewall, WAF, Wazuh SIEM và phân tích log bảo mật bằng ML trong môi trường lab có kiểm chứng.",
-          thesisLink: `Xem repo khóa luận <i class="fa-solid fa-arrow-right"></i>`,
-          sdwanBadge: "Học thuật",
-          sdwanDesc: "Mô hình SD-WAN Hub-and-Spoke 3 site, dual transport mã hóa và điều hướng traffic theo least-privilege cho hệ thống y tế quan trọng.",
-          github: `Xem GitHub <i class="fa-solid fa-arrow-right"></i>`,
-          aiBadge: "Cá nhân",
-          aiDesc: "Proxy bảo mật LLM song ngữ, kiểm soát DLP và prompt injection ở API perimeter cho workflow AI kiểu doanh nghiệp.",
-          vpnDesc: "VPN gateway ưu tiên privacy, kết hợp WireGuard, AdGuard Home và Unbound để giảm telemetry và tránh DNS tracking bên thứ ba.",
-          moreLabel: "Dự án khác",
-          moreTitle: "Các lab và dự án automation bổ sung.",
-          moreDesc: "Phần này được giữ ngắn để trang dễ đọc. Dự án nào public sẽ có link bằng chứng bên ngoài.",
-          expLabel: "Kinh nghiệm",
-          expTitle: "Kinh nghiệm thực tế trong vận hành mạng và bảo mật.",
-          expDesc: "Thực tập tập trung vào kiểm chứng thiết bị bảo mật, tác vụ Cisco network, đánh giá SD-WAN và hỗ trợ triển khai thực địa.",
-          expRole: "Network & Security Engineer Intern",
-          focusLabel: "Trọng tâm kỹ thuật",
-          focusTitle: "Nhóm kỹ năng bám sát vị trí tôi đang hướng tới.",
-          focusDesc: "Trình bày gọn hơn một danh sách skill dài: rõ trọng tâm, dễ đọc và đúng tín hiệu tuyển dụng Network/Security.",
-          certLabel: "Chứng chỉ",
-          certTitle: "Lộ trình học tập có xác thực.",
-          certDesc: "Chứng chỉ Cisco NetAcad và Linux hỗ trợ nền tảng mạng/bảo mật.",
-          aboutLabel: "Giới thiệu",
-          aboutTitle: "Sinh viên UIT ngành mạng, tập trung xây dựng lab hạ tầng bảo mật.",
-          aboutP: ["Tôi học ngành <strong>Mạng máy tính và Truyền thông dữ liệu</strong> tại Trường Đại học Công nghệ Thông tin (UIT – ĐHQG-HCM). Hướng làm việc chính là network security, system infrastructure và automation thực tế.", "Tại FSI, tôi đã tham gia các việc gần với production như kiểm chứng thiết bị bảo mật, hỗ trợ phần cứng Cisco, đánh giá SD-WAN, nghiên cứu VPN visibility và triển khai dịch vụ nội bộ.", "Định hướng gần là phát triển theo Network/Security Engineering, sau đó đào sâu network automation và cloud networking."],
-          contactLabel: "Liên hệ",
-          contactTitle: "Kết nối với tôi.",
-          contactDesc: "Sẵn sàng cho các cơ hội Network Engineer, Security Engineer, IT Helpdesk thiên về mạng/bảo mật và hỗ trợ hạ tầng quanh TP.HCM / Bình Dương.",
-          emailMe: `<i class="fa-solid fa-envelope"></i> Gửi email`,
-          form: ["Tên của bạn", "Email của bạn", "Nội dung...", "Gửi tin nhắn"],
-          footer: "© 2026 Phạm Thanh Lâm · Portfolio cho <span>network/security engineering</span> · TP. Hồ Chí Minh"
-        }
-      };
-
-      function setText(selector, value, html = false) {
-        const el = document.querySelector(selector);
-        if (!el) return;
-        if (html) el.innerHTML = value;
-        else el.textContent = value;
-      }
-      function setAll(selector, values, html = false) {
-        document.querySelectorAll(selector).forEach((el, idx) => {
-          if (values[idx] === undefined) return;
-          if (html) el.innerHTML = values[idx];
-          else el.textContent = values[idx];
-        });
-      }
-      function getStoredLanguage() {
-        try {
-          return localStorage.getItem("portfolioLang");
-        } catch (error) {
-          return null;
-        }
-      }
-      function storeLanguage(lang) {
-        try {
-          localStorage.setItem("portfolioLang", lang);
-        } catch (error) {
-          return;
-        }
-      }
-      function setWorkCard(card, updates = {}) {
-        if (!card) return;
-        if (updates.badge) setTextIn(card, ".badge", updates.badge);
-        if (updates.period) setTextIn(card, ".period", updates.period);
-        if (updates.title) setTextIn(card, ".work-title", updates.title);
-        if (updates.desc) setTextIn(card, ".work-desc", updates.desc);
-        if (updates.link) setTextIn(card, ".card-link", updates.link, true);
-      }
-      function setTextIn(parent, selector, value, html = false) {
-        const el = parent.querySelector(selector);
-        if (!el) return;
-        if (html) el.innerHTML = value;
-        else el.textContent = value;
-      }
-      function applyLanguage(lang) {
-        lang = translations[lang] ? lang : "en";
-        const t = translations[lang];
-        document.documentElement.lang = lang;
-        document.title = t.title;
-        storeLanguage(lang);
-        document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
-          const active = btn.dataset.langSwitch === lang;
-          btn.classList.toggle("active", active);
-          btn.setAttribute("aria-pressed", String(active));
-        });
-        setAll(".nav-links a", t.nav);
-        setAll(".mobile-menu > a", t.mobile);
-        setText(".nav-cv", t.cv);
-        document.querySelectorAll(".cv-link").forEach((link) => {
-          link.setAttribute("href", t.cvFile);
-          link.setAttribute("download", t.cvFile);
-        });
-        setText(".card-link.cv-link", t.downloadPdf, true);
-        setText(".eyebrow", t.eyebrow);
-        setText(".hero h1", t.heroTitle);
-        setText(".hero-lead", t.heroLead, true);
-        setText(".hero-actions .btn-primary", t.heroCta, true);
-        setAll(".trust-pill", t.trust, true);
-        setText(".console-line", `<span class="prompt">$</span> ${t.terminal[0]}`, true);
-        setAll(".console-metric .metric-copy b", [t.terminal[1], t.terminal[3], t.terminal[5]]);
-        setAll(".console-metric .metric-copy span", [t.terminal[2], t.terminal[4], t.terminal[6]]);
-        setAll(".proof-label", t.proof);
-        setText("#work .section-label", t.workLabel);
-        setText("#work .section-title", t.workTitle);
-        setText("#work .section-desc", t.workDesc);
-        const cards = document.querySelectorAll("#work .work-card");
-        setWorkCard(cards[0], {
-          badge: t.thesisBadge,
-          period: t.thesisPeriod,
-          title: t.thesisTitle,
-          desc: t.thesisDesc,
-          link: t.thesisLink,
-        });
-        setWorkCard(cards[1], {
-          badge: t.sdwanBadge,
-          desc: t.sdwanDesc,
-          link: t.github,
-        });
-        setWorkCard(cards[2], {
-          badge: t.aiBadge,
-          desc: t.aiDesc,
-          link: t.github,
-        });
-        setWorkCard(cards[3], {
-          badge: t.aiBadge,
-          desc: t.vpnDesc,
-          link: t.github,
-        });
-        setText("#more-work .section-label", t.moreLabel);
-        setText("#more-work .section-title", t.moreTitle);
-        setText("#more-work .section-desc", t.moreDesc);
-        document.querySelectorAll("#more-work .card-link").forEach((link) => { if (!link.textContent.includes("Watch") && !link.textContent.includes("demo") && !link.href.includes("netlify.app")) link.innerHTML = t.github; });
-        setText("#experience .section-label", t.expLabel);
-        setText("#experience .section-title", t.expTitle);
-        setText("#experience .section-desc", t.expDesc);
-        setText("#experience .role", t.expRole);
-        setText("#focus .section-label", t.focusLabel);
-        setText("#focus .section-title", t.focusTitle);
-        setText("#focus .section-desc", t.focusDesc);
-        setText("#certifications .section-label", t.certLabel);
-        setText("#certifications .section-title", t.certTitle);
-        setText("#certifications .section-desc", t.certDesc);
-        setText("#about .section-label", t.aboutLabel);
-        setText("#about .section-title", t.aboutTitle);
-        setAll("#about .about-copy p", t.aboutP, true);
-        setText("#contact .section-label", t.contactLabel);
-        setText("#contact .section-title", t.contactTitle);
-        setText("#contact .contact-desc", t.contactDesc);
-        setText("#contact .direct-links .btn-primary", t.emailMe, true);
-        const inputs = document.querySelectorAll("#contactForm input, #contactForm textarea");
-        if (inputs[0]) inputs[0].placeholder = t.form[0];
-        if (inputs[1]) inputs[1].placeholder = t.form[1];
-        if (inputs[2]) inputs[2].placeholder = t.form[2];
-        setText("#submitBtn", t.form[3]);
-        setText("footer", t.footer, true);
-      }
-      document.querySelectorAll("[data-lang-switch]").forEach((btn) => btn.addEventListener("click", () => applyLanguage(btn.dataset.langSwitch)));
-      applyLanguage(getStoredLanguage() || "en");
-
-      const nav = document.getElementById("nav");
-      const navToggle = document.getElementById("navToggle");
-      const mobileMenu = document.getElementById("mobileMenu");
-      window.addEventListener("scroll", () => {
-        nav.classList.toggle("scrolled", window.scrollY > 32);
-      });
-      navToggle.addEventListener("click", () => {
-        const isOpen = mobileMenu.classList.toggle("open");
-        navToggle.setAttribute("aria-expanded", String(isOpen));
-        navToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-      });
-      mobileMenu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          mobileMenu.classList.remove("open");
-          navToggle.setAttribute("aria-expanded", "false");
-          navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        });
-      });
-
-      const form = document.getElementById("contactForm");
-      const successMsg = document.getElementById("formSuccess");
-      const submitBtn = document.getElementById("submitBtn");
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-        submitBtn.textContent = "Sending...";
-        submitBtn.setAttribute("disabled", "true");
-        try {
-          const response = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form),
-            headers: { Accept: "application/json" },
-          });
-          if (response.ok) {
-            form.reset();
-            form.style.display = "none";
-            successMsg.style.display = "block";
-          } else {
-            submitBtn.textContent = "Failed — use email instead";
-            submitBtn.removeAttribute("disabled");
-          }
-        } catch (error) {
-          submitBtn.textContent = "Failed — use email instead";
-          submitBtn.removeAttribute("disabled");
-        }
-      });
-
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (!reduceMotion) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.12 },
-        );
-        document.querySelectorAll(".reveal").forEach((element, index) => {
-          element.style.transitionDelay = `${Math.min(index % 5, 4) * 0.05}s`;
-          observer.observe(element);
-        });
-      } else {
-        document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
-      }
-    </script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
