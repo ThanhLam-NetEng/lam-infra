@@ -6,7 +6,7 @@ const translations = {
     cv: "Download CV",
     cvFile: "cv-en.pdf",
     downloadPdf: `Download PDF <i class="fa-solid fa-arrow-right"></i>`,
-    eyebrow: "Open to Network/Security roles · 2026",
+    eyebrow: "IT Support @ Maersk · Network/Security Aspirant",
     heroTitle: "Network & Security Engineer for practical infrastructure systems.",
     heroLead: "I design and validate <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong>, and <strong>cloud security</strong> labs with a focus on measurable results, documentation, and operations.",
     heroCta: `View featured work <i class="fa-solid fa-arrow-right"></i>`,
@@ -112,7 +112,7 @@ const translations = {
       }
     ],
     aboutLabel: "Background",
-    aboutTitle: "UIT graduate completed program requirements, building security-focused infrastructure labs.",
+    aboutTitle: "UIT Networks alumnus awaiting degree, building security-focused infrastructure labs.",
     aboutP: [
       "I completed all program requirements and am awaiting graduation in <strong>Computer Networks & Data Communications</strong> at the University of Information Technology (UIT – VNU-HCM). My work focuses on network security, system infrastructure, and practical automation.",
       "I have worked with production-adjacent tasks at FSI (including security appliance validation, Cisco hardware support, SD-WAN evaluation, VPN visibility research) and am currently working as an IT Support Fresher at Maersk.",
@@ -132,7 +132,7 @@ const translations = {
     cv: "Tải CV",
     cvFile: "cv-vi.pdf",
     downloadPdf: `Tải PDF <i class="fa-solid fa-arrow-right"></i>`,
-    eyebrow: "Tìm cơ hội Network/Security · 2026",
+    eyebrow: "IT Support @ Maersk · Định hướng Network/Security",
     heroTitle: "Network & Security Engineer xây dựng hạ tầng thực tế, có kiểm chứng.",
     heroLead: "Tôi thiết kế và kiểm chứng các lab <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong> và <strong>cloud security</strong>, tập trung vào kết quả đo được, tài liệu rõ ràng và khả năng vận hành.",
     heroCta: `Xem dự án nổi bật <i class="fa-solid fa-arrow-right"></i>`,

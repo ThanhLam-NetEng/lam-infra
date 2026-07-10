@@ -273,3 +273,45 @@ if (!reduceMotion) {
 } else {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
 }
+
+// Theme Toggle Logic
+const themeToggleButtons = document.querySelectorAll("[data-theme-toggle]");
+
+function getStoredTheme() {
+  try {
+    return localStorage.getItem("portfolioTheme");
+  } catch (error) {
+    return null;
+  }
+}
+
+function storeTheme(theme) {
+  try {
+    localStorage.setItem("portfolioTheme", theme);
+  } catch (error) {
+    return;
+  }
+}
+
+function applyTheme(theme) {
+  theme = theme === "light" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", theme);
+  storeTheme(theme);
+  
+  themeToggleButtons.forEach((btn) => {
+    btn.innerHTML = theme === "light" 
+      ? '<i class="fa-solid fa-moon"></i>' 
+      : '<i class="fa-solid fa-sun"></i>';
+    btn.setAttribute("aria-label", theme === "light" ? "Switch to dark mode" : "Switch to light mode");
+  });
+}
+
+themeToggleButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
+    applyTheme(currentTheme === "light" ? "dark" : "light");
+  });
+});
+
+// Initialize theme
+applyTheme(getStoredTheme() || "dark");
