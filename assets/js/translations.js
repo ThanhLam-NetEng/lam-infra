@@ -1,19 +1,19 @@
 const translations = {
   en: {
-    title: "Phạm Thanh Lâm — Network & Security Engineer",
+    title: "Phạm Thanh Lâm — IT Support · Mạng máy tính & Truyền thông dữ liệu",
     nav: ["Work", "Experience", "Focus", "Certs", "About", "Contact"],
     mobile: ["Featured Work", "Experience", "Technical Focus", "Certifications", "About", "Contact", "Download CV →"],
     cv: "Download CV",
     cvFile: "cv-en.pdf",
     downloadPdf: `Download PDF <i class="fa-solid fa-arrow-right"></i>`,
-    eyebrow: "IT Support @ Maersk · Network/Security Aspirant",
-    heroTitle: "Network & Security Engineer for practical infrastructure systems.",
-    heroLead: "I design and validate <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong>, and <strong>cloud security</strong> labs with a focus on measurable results, documentation, and operations.",
+    eyebrow: "IT Support · Computer Networks & Data Communications",
+    heroTitle: "IT Support Specialist with strong networking & infrastructure background.",
+    heroLead: "IT Support Specialist with a solid networking foundation, experienced in receiving & resolving technical support tickets (hardware, software, network), deploying security devices, and configuring internal network infrastructure.",
     heroCta: `View featured work <i class="fa-solid fa-arrow-right"></i>`,
     trust: [
-      "UIT Networks (Awaiting Degree)",
-      "Maersk IT Support Fresher",
-      "HCM City · Bình Dương"
+      "UIT GPA 3.1/4.0 (2022–2026)",
+      "Maersk & FSI IT Support",
+      "Tăng Nhơn Phú, TP. HCM"
     ],
     terminal: ["show --validated-results", "HA firewall failover", "OPNsense Active-Passive cluster validated in thesis lab.", "WAF alerts analyzed", "ModSecurity + OWASP CRS validation with payload-level review.", "Network/security labs", "SD-WAN, SIEM, VPN/DNS security, AI security proxy."],
     proof: ["Firewall architecture, SSL offloading, ModSecurity, SIEM pipeline.", "Cisco dCloud/CML, vManage, C8000v, AAR policy, IPsec.", "AWS/GCP labs, WireGuard, DNS sinkhole, API security.", "Python, FastAPI, Docker, shell scripts, monitoring workflows."],
@@ -38,73 +38,78 @@ const translations = {
     makeFlowDesc: "Automated document processing workflow built on Make.com. It monitors a Google Drive folder for new files, downloads them, invokes the Anthropic Claude API to analyze and extract structured data via custom prompts, parses the JSON payload, and records the parsed information into Google Sheets in real-time.",
     makeFlowLink: `View workflow diagram <i class="fa-solid fa-arrow-right"></i>`,
     expLabel: "Experience",
-    expTitle: "Practical exposure in network and security operations.",
-    expDesc: "Internship and current professional work focused on IT support operations, security appliance validation, and networking.",
+    expTitle: "Practical experience in IT Support & Network operations.",
+    expDesc: "Hands-on IT Support experience in enterprise environments, warehouse logistics, and network security appliance deployment.",
     experience: [
       {
-        company: "Maersk",
-        role: "IT Support Fresher",
-        period: "Jun 2026 – Present",
-        address: "Đông Hòa Ward, Dĩ An City, Bình Dương Province",
+        company: "Maersk ( L&A Provider)",
+        role: "IT Support",
+        period: "Jun 2026 – Aug 2026",
+        address: "No. 9, DT 743 Street, Binh Thang Ward, Di An City, Binh Duong Province.",
         bullets: [
-          "Provide technical support for workplace IT infrastructure, endpoint hardware, and office network connectivity.",
-          "Assist in staging, deploying, and troubleshooting IT systems and user devices.",
-          "Coordinate local IT assets and network issues with regional support teams."
+          "Received and handled technical tickets via Outlook and MS Teams adhering strictly to SLA workflows.",
+          "Supported operations and monitoring of RPA system (Power Automate); provided remote employee support via AnyDesk.",
+          "Deployed and configured software for employees; developed operational user guides and SOPs.",
+          "Administered user accounts and supported operations on the Körber One WMS system.",
+          "Queried and processed data via SQLDBX for ticket investigation and issue resolution.",
+          "Proficient in logistics processes, EDI data integration flows, and warehouse operating SOPs.",
+          "Conducted direct on-site technical support at other warehouses and branch locations upon request."
         ]
       },
       {
-        company: "FSI — FSI Technology Development Joint Stock Company",
-        role: "Network & Security Engineer Intern",
-        period: "Mar 2026 – Jun 2026",
-        address: "26/22 Street No. 3, Do Thanh Residence, Ward 4, District 3, Ho Chi Minh City",
+        company: "Công ty CP Đầu Tư Thương Mại và Phát Triển Công Nghệ FSI",
+        role: "IT Support Intern",
+        period: "Feb 2026 – Jun 2026",
+        address: "No. 26/22 Street No. 3, Do Thanh Residence, Ward 4, District 3, Ho Chi Minh City",
         bullets: [
-          "Deployed and validated <strong>F-DDH BOX</strong> security appliance end-to-end: lab setup, traffic simulation, alert verification, configuration guide, and customer-facing demos.",
-          "Researched VPN evasion techniques including <strong>Tailscale, Cloudflare WARP, and WireGuard on AWS EC2</strong> to assess NGFW visibility limitations.",
-          "Assisted Cisco network initiatives including <strong>Catalyst 9200L IOS upgrade</strong>, StackWise stacking, Peplink SD-WAN evaluation, and presales documentation.",
-          "Deployed internal attendance web app on a local server with <strong>NAT port forwarding</strong>, custom domain setup, functional testing, and basic security assessment."
+          "Deployed and validated network security appliances (F-DDH BOX) in lab/production environments.",
+          "Participated in network infrastructure deployment projects and supported system troubleshooting.",
+          "Monitored and managed IT assets (hardware and software).",
+          "Configured internal network systems (modem, Wi-Fi, router, switch).",
+          "Supported end users directly and remotely via UltraViewer and Remote Desktop."
         ]
       }
     ],
-    focusLabel: "Technical Focus",
-    focusTitle: "Skill groups mapped to the roles I am targeting.",
-    focusDesc: "A cleaner alternative to a long wall of skill pills: focused, readable, and aligned to network/security hiring signals.",
+    focusLabel: "Technical Skills",
+    focusTitle: "Skill groups aligned to my IT Support & Networking profile.",
+    focusDesc: "Categorized skill set covering Hardware & OS, Networking, Technical Support Tools, and Development.",
     focusCards: [
       {
-        title: "Network Architecture",
-        desc: "Routing/Switching, SD-WAN, HA, LAN/WAN/DMZ, Cisco IOS, CML, StackWise, IPv6."
+        title: "Hardware & OS",
+        desc: "Windows, macOS, Linux, PC/Laptop, Printer/Scanner, Windows Server."
       },
       {
-        title: "Security Engineering",
-        desc: "OPNsense, WAF, IDS/IPS, Wazuh SIEM, ModSecurity, Suricata, VPN, monitoring."
+        title: "Networking",
+        desc: "Switch/Router/Modem, TCP/IP, DHCP, DNS, IPv4/IPv6, ACL/NAT, HTTP/HTTPS, VPN."
       },
       {
-        title: "Cloud & Infrastructure",
-        desc: "AWS, Google Cloud, Docker, Linux, Windows Server, VMware, nested virtualization."
+        title: "Technical Support & Tools",
+        desc: "Ticketing system, MS Office 365, Google Workspace, UltraViewer, AnyDesk, Remote Desktop."
       },
       {
-        title: "Automation & Tools",
-        desc: "Python, C++, FastAPI, Shell, Git, Wireshark, Mininet, Matplotlib, scikit-learn."
+        title: "Dev & Tools",
+        desc: "Python, C++, SQL, Git, Shell Script, Postman/cURL, VMware, VirtualBox."
       }
     ],
     certLabel: "Certifications",
-    certTitle: "Verified learning path.",
-    certDesc: "Cisco NetAcad and Linux credentials supporting the networking/security foundation.",
+    certTitle: "Verified credentials.",
+    certDesc: "Cisco NetAcad and Linux credentials supporting the networking and IT foundation.",
     certs: [
+      {
+        title: "Networking Devices & Initial Configuration",
+        desc: "Hands-on Cisco router/switch configuration, VLANs, STP, and device hardening."
+      },
+      {
+        title: "Linux Essentials",
+        desc: "Linux OS concepts, open-source fundamentals, processes, users/groups, and networking basics."
+      },
       {
         title: "Networking Basics",
         desc: "Network types, protocols, IP addressing, and basic switching foundations."
       },
       {
-        title: "Networking Devices and Initial Configuration",
-        desc: "Hands-on Cisco router/switch configuration, VLANs, STP, and device hardening."
-      },
-      {
         title: "Linux Unhatched",
         desc: "Linux CLI fundamentals, file system navigation, permissions, and shell basics."
-      },
-      {
-        title: "Linux Essentials",
-        desc: "Linux OS concepts, open-source fundamentals, processes, users/groups, and networking basics."
       },
       {
         title: "Technical Support Fundamentals",
@@ -112,34 +117,34 @@ const translations = {
       }
     ],
     aboutLabel: "Background",
-    aboutTitle: "UIT Networks alumnus awaiting degree, building security-focused infrastructure labs.",
+    aboutTitle: "UIT Graduate in Computer Networks & Data Communications (GPA 3.1 / 4.0).",
     aboutP: [
-      "I completed all program requirements and am awaiting graduation in <strong>Computer Networks & Data Communications</strong> at the University of Information Technology (UIT – VNU-HCM). My work focuses on network security, system infrastructure, and practical automation.",
-      "I have worked with production-adjacent tasks at FSI (including security appliance validation, Cisco hardware support, SD-WAN evaluation, VPN visibility research) and am currently working as an IT Support Fresher at Maersk.",
-      "My near-term direction is to grow into Network/Security Engineering, then deepen into network automation and cloud networking."
+      "I graduated from the <strong>University of Information Technology (UIT – VNU-HCM)</strong> majoring in <strong>Computer Networks & Data Communications</strong> (GPA 3.1 / 4.0, 2022–2026). My technical background encompasses IT support, networking infrastructure, and security lab automation.",
+      "I have professional IT Support experience at <strong>Maersk (L&A Provider)</strong> and <strong>FSI</strong>, specializing in SLA ticket handling, WMS/RPA support, endpoint deployment, and internal network configuration.",
+      "My goal is to leverage my IT support and networking capabilities to deliver reliable infrastructure operations and user support."
     ],
     contactLabel: "Contact",
     contactTitle: "Let’s connect.",
-    contactDesc: "Open to Network Engineer, Security Engineer, IT Helpdesk with networking/security focus, and infrastructure support opportunities around HCM City / Bình Dương.",
+    contactDesc: "Open to IT Support, Network Engineer, System Administrator, and Helpdesk opportunities around Ho Chi Minh City & Binh Duong.",
     emailMe: `<i class="fa-solid fa-envelope"></i> Email me`,
     form: ["Your name", "Your email", "Your message...", "Send message"],
-    footer: "© 2026 Phạm Thanh Lâm · Built for <span>network/security engineering</span> · Ho Chi Minh City"
+    footer: "© 2026 Phạm Thanh Lâm · Built for <span>IT Support & Network Engineering</span> · Ho Chi Minh City"
   },
   vi: {
-    title: "Phạm Thanh Lâm — Network & Security Engineer",
+    title: "Phạm Thanh Lâm — IT Support · Mạng máy tính & Truyền thông dữ liệu",
     nav: ["Dự án", "Kinh nghiệm", "Trọng tâm", "Chứng chỉ", "Giới thiệu", "Liên hệ"],
     mobile: ["Dự án nổi bật", "Kinh nghiệm", "Trọng tâm kỹ thuật", "Chứng chỉ", "Giới thiệu", "Liên hệ", "Tải CV →"],
     cv: "Tải CV",
     cvFile: "cv-vi.pdf",
     downloadPdf: `Tải PDF <i class="fa-solid fa-arrow-right"></i>`,
-    eyebrow: "IT Support @ Maersk · Định hướng Network/Security",
-    heroTitle: "Network & Security Engineer xây dựng hạ tầng thực tế, có kiểm chứng.",
-    heroLead: "Tôi thiết kế và kiểm chứng các lab <strong>HA firewall</strong>, <strong>SD-WAN</strong>, <strong>SIEM</strong> và <strong>cloud security</strong>, tập trung vào kết quả đo được, tài liệu rõ ràng và khả năng vận hành.",
+    eyebrow: "IT Support · Mạng máy tính & Truyền thông dữ liệu",
+    heroTitle: "IT Support với nền tảng Mạng máy tính & Hạ tầng kỹ thuật.",
+    heroLead: "IT Support với nền tảng networking, kinh nghiệm tiếp nhận và xử lý ticket hỗ trợ kỹ thuật (phần cứng, phần mềm, mạng), triển khai thiết bị và hệ thống bảo mật mạng, cấu hình hệ thống mạng nội bộ; có khả năng chẩn đoán, xử lý đa yêu cầu và làm việc trực tiếp với người dùng/đối tác.",
     heroCta: `Xem dự án nổi bật <i class="fa-solid fa-arrow-right"></i>`,
     trust: [
-      "Hoàn thành CT học UIT (Chờ nhận bằng)",
-      "IT Support Fresher tại Maersk",
-      "TP.HCM · Bình Dương"
+      "UIT GPA 3.1/4.0 (2022–2026)",
+      "Kinh nghiệm Maersk & FSI",
+      "Tăng Nhơn Phú, TP. HCM"
     ],
     terminal: ["show --validated-results", "Failover HA firewall", "Cụm OPNsense Active-Passive được kiểm chứng trong lab khóa luận.", "WAF alerts đã phân tích", "Kiểm chứng ModSecurity + OWASP CRS ở mức payload.", "Lab network/security", "SD-WAN, SIEM, VPN/DNS security, AI security proxy."],
     proof: ["Kiến trúc firewall, SSL offloading, ModSecurity, SIEM pipeline.", "Cisco dCloud/CML, vManage, C8000v, AAR policy, IPsec.", "AWS/GCP labs, WireGuard, DNS sinkhole, API security.", "Python, FastAPI, Docker, shell scripts, monitoring workflows."],
@@ -164,52 +169,57 @@ const translations = {
     makeFlowDesc: "Luồng tự động hóa xử lý tài liệu xây dựng trên Make.com. Hệ thống tự động theo dõi thư mục Google Drive, tải xuống tài liệu mới, gọi API Anthropic Claude để phân tích và trích xuất dữ liệu có cấu trúc qua prompt tùy chỉnh, phân tích dữ liệu JSON và lưu trữ vào Google Sheets theo thời gian thực.",
     makeFlowLink: `Xem sơ đồ workflow <i class="fa-solid fa-arrow-right"></i>`,
     expLabel: "Kinh nghiệm",
-    expTitle: "Kinh nghiệm thực tế trong vận hành mạng và bảo mật.",
-    expDesc: "Hoạt động thực tập và công việc hiện tại tập trung vào vận hành hỗ trợ CNTT, kiểm chứng thiết bị bảo mật và quản lý mạng.",
+    expTitle: "Kinh nghiệm thực tế trong vận hành IT Support & Mạng.",
+    expDesc: "Kinh nghiệm IT Support thực tế tại môi trường doanh nghiệp logistics, hệ thống kho bãi và triển khai thiết bị bảo mật mạng.",
     experience: [
       {
-        company: "Maersk",
-        role: "IT Support Fresher",
-        period: "06/2026 – Hiện tại",
-        address: "Phường Đông Hòa, Thành phố Dĩ An, Tỉnh Bình Dương",
+        company: "Maersk ( L&A Provider)",
+        role: "IT Support",
+        period: "6/2026 – 8/2026",
+        address: "Số 9, Đường ĐT 743, Phường Bình Thắng, Thành phố Dĩ An, Tỉnh Bình Dương.",
         bullets: [
-          "Hỗ trợ kỹ thuật cho hạ tầng CNTT nơi làm việc, thiết bị đầu cuối và kết nối mạng văn phòng tại chỗ cho người dùng.",
-          "Hỗ trợ chuẩn bị thiết bị (staging), triển khai cấu hình và xử lý sự cố hệ thống CNTT và thiết bị người dùng.",
-          "Phối hợp quản lý tài sản CNTT local và xử lý các sự cố mạng với các đội ngũ hỗ trợ khu vực (regional support)."
+          "Tiếp nhận, xử lý ticket qua Outlook và MS Teams theo quy trình SLA",
+          "Hỗ trợ vận hành và theo dõi hệ thống RPA (Power Automate), remote support nhân viên qua AnyDesk",
+          "Triển khai, cấu hình phần mềm cho nhân viên; xây dựng tài liệu hướng dẫn nghiệp vụ",
+          "Quản trị tài khoản người dùng và hỗ trợ vận hành trên hệ thống WMS Körber One",
+          "Truy vấn, xử lý dữ liệu qua SQLDBX phục vụ điều tra và xử lý ticket",
+          "Am hiểu quy trình logistics, luồng tích hợp dữ liệu EDI và SOP vận hành kho",
+          "Công tác hỗ trợ kỹ thuật trực tiếp tại các kho/chi nhánh khác khi có yêu cầu"
         ]
       },
       {
-        company: "FSI — Công ty Cổ phần Công nghệ FSI",
-        role: "Network & Security Engineer Intern",
-        period: "03/2026 – 06/2026",
-        address: "26/22 Đường số 03, Cư Xá Đô Thành, Phường Bàn Cờ, TP. Hồ Chí Minh",
+        company: "Công ty CP Đầu Tư Thương Mại và Phát Triển Công Nghệ FSI",
+        role: "IT Support Intern",
+        period: "2/2026 – 6/2026",
+        address: "Số 26/22 Đường số 3, Cư Xá Đô Thành, Phường Bàn Cờ, Quận 3, TP. Hồ Chí Minh",
         bullets: [
-          "Triển khai và kiểm chứng thiết bị bảo mật <strong>F-DDH BOX</strong> end-to-end: dựng lab, giả lập traffic, xác thực cảnh báo, viết tài liệu cấu hình và demo cho khách hàng.",
-          "Nghiên cứu kỹ thuật ẩn mình của VPN gồm <strong>Tailscale, Cloudflare WARP và WireGuard trên AWS EC2</strong> để đánh giá giới hạn nhận diện của NGFW.",
-          "Hỗ trợ các hoạt động mạng Cisco bao gồm <strong>nâng cấp IOS Catalyst 9200L</strong>, StackWise stacking, đánh giá Peplink SD-WAN và chuẩn bị tài liệu presales.",
-          "Triển khai web app điểm danh nội bộ trên máy chủ local sử dụng <strong>NAT port forwarding</strong>, cấu hình tên miền riêng, kiểm thử chức năng và đánh giá bảo mật cơ bản."
+          "Triển khai, kiểm định thiết bị bảo mật mạng (F-DDH BOX) trên môi trường lab/production",
+          "Tham gia dự án triển khai cơ sở hạ tầng mạng, hỗ trợ khắc phục sự cố hệ thống",
+          "Theo dõi, quản lý tài sản CNTT (phần cứng và phần mềm)",
+          "Cấu hình hệ thống mạng nội bộ (modem, wifi, router, switch)",
+          "Hỗ trợ người dùng trực tiếp, từ xa qua UltraViewer, Remote Desktop"
         ]
       }
     ],
     focusLabel: "Trọng tâm kỹ thuật",
-    focusTitle: "Nhóm kỹ năng bám sát vị trí tôi đang hướng tới.",
-    focusDesc: "Trình bày gọn hơn một danh sách skill dài: rõ trọng tâm, dễ đọc và đúng tín hiệu tuyển dụng Network/Security.",
+    focusTitle: "Kỹ năng được hệ thống hóa theo các nhóm trong CV.",
+    focusDesc: "Danh mục kỹ năng gồm Phần cứng & HĐH, Mạng máy tính, Hỗ trợ kỹ thuật và Công cụ Lập trình.",
     focusCards: [
       {
-        title: "Kiến trúc Mạng",
-        desc: "Định tuyến/Chuyển mạch, SD-WAN, HA, LAN/WAN/DMZ, Cisco IOS, CML, StackWise, IPv6."
+        title: "Hardware & OS",
+        desc: "Windows, macOS, Linux, PC/Laptop, Máy in/Scanner, Windows Server."
       },
       {
-        title: "Kỹ thuật Bảo mật",
-        desc: "OPNsense, WAF, IDS/IPS, Wazuh SIEM, ModSecurity, Suricata, VPN, giám sát an ninh."
+        title: "Networking",
+        desc: "Switch/Router/Modem, TCP/IP, DHCP, DNS, IPv4/IPv6, ACL/NAT, HTTP/HTTPS, VPN."
       },
       {
-        title: "Điện toán Đám mây & Hạ tầng",
-        desc: "AWS, Google Cloud, Docker, Linux, Windows Server, VMware, ảo hóa lồng (nested)."
+        title: "Technical Support & Tools",
+        desc: "Hệ thống Ticketing, MS Office 365, Google Workspace, UltraViewer, AnyDesk, Remote Desktop."
       },
       {
-        title: "Tự động hóa & Công cụ",
-        desc: "Python, C++, FastAPI, Shell, Git, Wireshark, Mininet, Matplotlib, scikit-learn."
+        title: "Dev & Tools",
+        desc: "Python, C++, SQL, Git, Shell Script, Postman/cURL, VMware, VirtualBox."
       }
     ],
     certLabel: "Chứng chỉ",
@@ -217,20 +227,20 @@ const translations = {
     certDesc: "Chứng chỉ Cisco NetAcad và Linux hỗ trợ nền tảng mạng/bảo mật.",
     certs: [
       {
-        title: "Networking Basics",
-        desc: "Các loại mạng, giao thức, địa chỉ IP và nền tảng chuyển mạch (switching) cơ bản."
-      },
-      {
-        title: "Networking Devices and Initial Configuration",
+        title: "Networking Devices & Initial Configuration",
         desc: "Cấu hình router/switch Cisco thực tế, VLANs, STP và bảo mật thiết bị (hardening)."
-      },
-      {
-        title: "Linux Unhatched",
-        desc: "Các lệnh Linux CLI cơ bản, điều hướng hệ thống tệp, phân quyền và shell cơ bản."
       },
       {
         title: "Linux Essentials",
         desc: "Khái niệm HĐH Linux, mã nguồn mở, tiến trình, user/group và mạng cơ bản."
+      },
+      {
+        title: "Networking Basics",
+        desc: "Các loại mạng, giao thức, địa chỉ IP và nền tảng chuyển mạch (switching) cơ bản."
+      },
+      {
+        title: "Linux Unhatched",
+        desc: "Các lệnh Linux CLI cơ bản, điều hướng hệ thống tệp, phân quyền và shell cơ bản."
       },
       {
         title: "Technical Support Fundamentals",
@@ -238,17 +248,17 @@ const translations = {
       }
     ],
     aboutLabel: "Giới thiệu",
-    aboutTitle: "Hoàn thành chương trình học UIT, tập trung xây dựng lab hạ tầng bảo mật.",
+    aboutTitle: "Cử nhân Mạng máy tính & Truyền thông dữ liệu UIT (GPA 3.1 / 4.0).",
     aboutP: [
-      "Tôi đã hoàn thành chương trình học và đang chờ nhận bằng tốt nghiệp ngành <strong>Mạng máy tính và Truyền thông dữ liệu</strong> tại Trường Đại học Công nghệ Thông tin (UIT – ĐHQG-HCM). Hướng làm việc chính là network security, system infrastructure và automation thực tế.",
-      "Tại FSI, tôi đã tham gia các việc gần với production như kiểm chứng thiết bị bảo mật, hỗ trợ phần cứng Cisco, đánh giá SD-WAN, nghiên cứu VPN visibility. Hiện tại tôi đang làm việc với vai trò IT Support Fresher tại Maersk.",
-      "Định hướng gần là phát triển theo Network/Security Engineering, sau đó đào sâu network automation và cloud networking."
+      "Tôi tốt nghiệp ngành <strong>Mạng máy tính và Truyền thông dữ liệu</strong> tại <strong>Trường Đại học Công nghệ Thông tin (UIT – ĐHQG-HCM)</strong> với <strong>GPA 3.1 / 4.0 (2022 – 2026)</strong>. Hướng làm việc chính là IT Support, hạ tầng mạng và tự động hóa.",
+      "Tôi đã có kinh nghiệm làm việc thực tế tại <strong>Maersk (L&A Provider)</strong> và <strong>FSI</strong> với vai trò <strong>IT Support</strong>, chuyên xử lý ticket SLA, hỗ trợ vận hành WMS Körber One / RPA, triển khai phần mềm và cấu hình mạng nội bộ.",
+      "Mục tiêu của tôi là phát huy nền tảng IT Support và Networking để vận hành hệ thống thông suốt, hỗ trợ kỹ thuật hiệu quả cho người dùng và doanh nghiệp."
     ],
     contactLabel: "Liên hệ",
     contactTitle: "Kết nối với tôi.",
-    contactDesc: "Sẵn sàng cho các cơ hội Network Engineer, Security Engineer, IT Helpdesk thiên về mạng/bảo mật và hỗ trợ hạ tầng quanh TP.HCM / Bình Dương.",
+    contactDesc: "Sẵn sàng cho các cơ hội IT Support, Network Engineer, System Administrator và Helpdesk quanh TP.HCM / Bình Dương.",
     emailMe: `<i class="fa-solid fa-envelope"></i> Gửi email`,
     form: ["Tên của bạn", "Email của bạn", "Nội dung...", "Gửi tin nhắn"],
-    footer: "© 2026 Phạm Thanh Lâm · Portfolio cho <span>network/security engineering</span> · TP. Hồ Chí Minh"
+    footer: "© 2026 Phạm Thanh Lâm · Portfolio cho <span>IT Support & Network Engineering</span> · TP. Hồ Chí Minh"
   }
 };
