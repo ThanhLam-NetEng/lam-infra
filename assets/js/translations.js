@@ -42,9 +42,9 @@ const translations = {
     expDesc: "Hands-on IT Support experience in enterprise environments, warehouse logistics, and network security appliance deployment.",
     experience: [
       {
-        company: "Maersk ( L&A Provider)",
+        company: "Maersk (L&A Provider)",
         role: "IT Support",
-        period: "Jun 2026 – Aug 2026",
+        period: "Jun 2026 – Present",
         address: "No. 9, DT 743 Street, Binh Thang Ward, Di An City, Binh Duong Province.",
         bullets: [
           "Received and handled technical tickets via Outlook and MS Teams adhering strictly to SLA workflows.",
@@ -173,9 +173,9 @@ const translations = {
     expDesc: "Kinh nghiệm IT Support thực tế tại môi trường doanh nghiệp logistics, hệ thống kho bãi và triển khai thiết bị bảo mật mạng.",
     experience: [
       {
-        company: "Maersk ( L&A Provider)",
+        company: "Maersk (L&A Provider)",
         role: "IT Support",
-        period: "6/2026 – 8/2026",
+        period: "06/2026 – Hiện tại",
         address: "Số 9, Đường ĐT 743, Phường Bình Thắng, Thành phố Dĩ An, Tỉnh Bình Dương.",
         bullets: [
           "Tiếp nhận, xử lý ticket qua Outlook và MS Teams theo quy trình SLA",
@@ -190,7 +190,7 @@ const translations = {
       {
         company: "Công ty CP Đầu Tư Thương Mại và Phát Triển Công Nghệ FSI",
         role: "IT Support Intern",
-        period: "2/2026 – 6/2026",
+        period: "02/2026 – 06/2026",
         address: "Số 26/22 Đường số 3, Cư Xá Đô Thành, Phường Bàn Cờ, Quận 3, TP. Hồ Chí Minh",
         bullets: [
           "Triển khai, kiểm định thiết bị bảo mật mạng (F-DDH BOX) trên môi trường lab/production",
