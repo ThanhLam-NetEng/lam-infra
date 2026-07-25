@@ -96,6 +96,18 @@ const translations = {
     certDesc: "Cisco NetAcad and Linux credentials supporting the networking and IT foundation.",
     certs: [
       {
+        title: "Technical Support Fundamentals",
+        desc: "Computer hardware, operating systems, troubleshooting, system administration, and network protocols."
+      },
+      {
+        title: "The Bits and Bytes of Computer Networking",
+        desc: "Computer networking fundamentals, TCP/IP model, IP addressing & subnetting, routing protocols, and network troubleshooting."
+      },
+      {
+        title: "Operating Systems and You: Becoming a Power User",
+        desc: "Operating system architecture, directory structures, user & process management, file systems, and CLI administration (Windows & Linux)."
+      },
+      {
         title: "Networking Devices & Initial Configuration",
         desc: "Hands-on Cisco router/switch configuration, VLANs, STP, and device hardening."
       },
@@ -110,10 +122,6 @@ const translations = {
       {
         title: "Linux Unhatched",
         desc: "Linux CLI fundamentals, file system navigation, permissions, and shell basics."
-      },
-      {
-        title: "Technical Support Fundamentals",
-        desc: "Computer hardware, operating systems, troubleshooting, system administration, and network protocols."
       }
     ],
     aboutLabel: "Background",
@@ -227,6 +235,18 @@ const translations = {
     certDesc: "Chứng chỉ Cisco NetAcad và Linux hỗ trợ nền tảng mạng/bảo mật.",
     certs: [
       {
+        title: "Technical Support Fundamentals",
+        desc: "Phần cứng máy tính, hệ điều hành, xử lý sự cố, quản trị hệ thống và giao thức mạng."
+      },
+      {
+        title: "The Bits and Bytes of Computer Networking",
+        desc: "Khái niệm cơ bản về mạng máy tính, mô hình TCP/IP, địa chỉ IP & chia mạng con (subnetting), các giao thức định tuyến và xử lý sự cố mạng."
+      },
+      {
+        title: "Operating Systems and You: Becoming a Power User",
+        desc: "Kiến trúc hệ điều hành, cấu trúc thư mục, quản lý người dùng & tiến trình, hệ thống tệp và quản trị bằng dòng lệnh CLI (Windows & Linux)."
+      },
+      {
         title: "Networking Devices & Initial Configuration",
         desc: "Cấu hình router/switch Cisco thực tế, VLANs, STP và bảo mật thiết bị (hardening)."
       },
@@ -241,10 +261,6 @@ const translations = {
       {
         title: "Linux Unhatched",
         desc: "Các lệnh Linux CLI cơ bản, điều hướng hệ thống tệp, phân quyền và shell cơ bản."
-      },
-      {
-        title: "Technical Support Fundamentals",
-        desc: "Phần cứng máy tính, hệ điều hành, xử lý sự cố, quản trị hệ thống và giao thức mạng."
       }
     ],
     aboutLabel: "Giới thiệu",
