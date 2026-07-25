@@ -44,7 +44,7 @@ const translations = {
       {
         company: "Maersk (L&A Provider)",
         role: "IT Support",
-        period: "Jun 2026 – Present",
+        period: "Jun 2026 – Aug 2026",
         address: "No. 9, DT 743 Street, Binh Thang Ward, Di An City, Binh Duong Province.",
         bullets: [
           "Received and handled technical tickets via Outlook and MS Teams adhering strictly to SLA workflows.",
@@ -175,7 +175,7 @@ const translations = {
       {
         company: "Maersk (L&A Provider)",
         role: "IT Support",
-        period: "06/2026 – Hiện tại",
+        period: "6/2026 – 8/2026",
         address: "Số 9, Đường ĐT 743, Phường Bình Thắng, Thành phố Dĩ An, Tỉnh Bình Dương.",
         bullets: [
           "Tiếp nhận, xử lý ticket qua Outlook và MS Teams theo quy trình SLA",
