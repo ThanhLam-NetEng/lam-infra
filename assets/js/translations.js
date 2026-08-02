@@ -108,6 +108,14 @@ const translations = {
         desc: "Operating system architecture, directory structures, user & process management, file systems, and CLI administration (Windows & Linux)."
       },
       {
+        title: "IT Security: Defense against the digital dark arts",
+        desc: "Encryption algorithms, authentication & authorization mechanisms, network security defense in depth, threat analysis, and security hardening."
+      },
+      {
+        title: "Accelerate Your Job Search with AI",
+        desc: "Utilizing generative AI tools to optimize career workflows, resume tailoring, interview prep, and professional personal branding."
+      },
+      {
         title: "Networking Devices & Initial Configuration",
         desc: "Hands-on Cisco router/switch configuration, VLANs, STP, and device hardening."
       },
@@ -245,6 +253,14 @@ const translations = {
       {
         title: "Operating Systems and You: Becoming a Power User",
         desc: "Kiến trúc hệ điều hành, cấu trúc thư mục, quản lý người dùng & tiến trình, hệ thống tệp và quản trị bằng dòng lệnh CLI (Windows & Linux)."
+      },
+      {
+        title: "IT Security: Defense against the digital dark arts",
+        desc: "Các thuật toán mã hóa, cơ chế xác thực & phân quyền, phòng thủ chuyên sâu cho mạng (defense in depth), phân tích mối đe dọa và bảo mật hệ thống."
+      },
+      {
+        title: "Accelerate Your Job Search with AI",
+        desc: "Ứng dụng các công cụ AI tạo sinh để tối ưu hóa quy trình tìm việc, tinh chỉnh CV, luyện tập phỏng vấn và xây dựng thương hiệu cá nhân chuyên nghiệp."
       },
       {
         title: "Networking Devices & Initial Configuration",
