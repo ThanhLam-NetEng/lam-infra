@@ -96,6 +96,10 @@ const translations = {
     certDesc: "Cisco NetAcad and Linux credentials supporting the networking and IT foundation.",
     certs: [
       {
+        title: "Google IT Support Professional Certificate",
+        desc: "6-course professional Specialization covering Technical Support, Networking, Operating Systems, Systems Administration, IT Security, and Generative AI for Job Search."
+      },
+      {
         title: "Technical Support Fundamentals",
         desc: "Computer hardware, operating systems, troubleshooting, system administration, and network protocols."
       },
@@ -246,6 +250,10 @@ const translations = {
     certTitle: "Lộ trình học tập có xác thực.",
     certDesc: "Chứng chỉ Cisco NetAcad và Linux hỗ trợ nền tảng mạng/bảo mật.",
     certs: [
+      {
+        title: "Google IT Support Professional Certificate",
+        desc: "Chương trình chứng chỉ chuyên nghiệp gồm 6 khóa học toàn diện về Hỗ trợ kỹ thuật, Mạng máy tính, Hệ điều hành, Quản trị hệ thống, Bảo mật CNTT và Ứng dụng AI tạo sinh."
+      },
       {
         title: "Technical Support Fundamentals",
         desc: "Phần cứng máy tính, hệ điều hành, xử lý sự cố, quản trị hệ thống và giao thức mạng."
