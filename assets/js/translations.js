@@ -108,6 +108,10 @@ const translations = {
         desc: "Operating system architecture, directory structures, user & process management, file systems, and CLI administration (Windows & Linux)."
       },
       {
+        title: "System Administration and IT Infrastructure Services",
+        desc: "Infrastructure services management, Active Directory & LDAP, cloud resources, data backup & recovery, and system administration best practices."
+      },
+      {
         title: "IT Security: Defense against the digital dark arts",
         desc: "Encryption algorithms, authentication & authorization mechanisms, network security defense in depth, threat analysis, and security hardening."
       },
@@ -253,6 +257,10 @@ const translations = {
       {
         title: "Operating Systems and You: Becoming a Power User",
         desc: "Kiến trúc hệ điều hành, cấu trúc thư mục, quản lý người dùng & tiến trình, hệ thống tệp và quản trị bằng dòng lệnh CLI (Windows & Linux)."
+      },
+      {
+        title: "System Administration and IT Infrastructure Services",
+        desc: "Quản trị dịch vụ hạ tầng, Active Directory & LDAP, tài nguyên điện toán đám mây, sao lưu & khôi phục dữ liệu và quy chuẩn quản trị hệ thống."
       },
       {
         title: "IT Security: Defense against the digital dark arts",
